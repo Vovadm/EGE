@@ -9,7 +9,7 @@ with open("jan/task24-04.01/2.txt") as f:
             ar += x + "*"
 
         elif x == "0":
-            ar = str(int(x)) + "*"
+            ar += str(int(x)) + "*"
 
         elif len(x) > 1 and x[0] == "0":
             ar += "0*"
