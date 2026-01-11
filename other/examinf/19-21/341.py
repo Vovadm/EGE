@@ -45,10 +45,16 @@ def f2(s, k):
 
 
 task19 = min(
-    [s for s in range(1, 56) if any(v >= 56 for p in moves(s) for v in moves(p))]
+    [
+        s
+        for s in range(1, 56)
+        if any(v >= 56 for p in moves(s) for v in moves(p))
+    ]
 )
 task20 = [s for s in range(1, 56) if (not f(s, 1)) and f(s, 3)]
-task21 = [s for s in range(1, 56) if f2(s, 3) and not f2(s, 1) and not f2(s, 2)]
+task21 = [
+    s for s in range(1, 56) if f2(s, 3) and not f2(s, 1) and not f2(s, 2)
+]
 
 print(task19)
 print(task20)

@@ -5,7 +5,10 @@ A = []
 
 for x in range(1, 20000):
     if (
-        not ((((x in P) <= (not (x in Q))) and ((x in Q) <= (x in R))) or (x in A))
+        not (
+            (((x in P) <= (not (x in Q))) and ((x in Q) <= (x in R)))
+            or (x in A)
+        )
         and x not in R
     ):
         A.append(x)

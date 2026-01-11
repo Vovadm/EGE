@@ -8,8 +8,9 @@ for N in range(1, 1000):
         n //= 13
     if not digits:
         digits = [0]
-    s = "".join(str(d) if d < 10 else
-                chr(ord("A") + d - 10) for d in digits[::-1])
+    s = "".join(
+        str(d) if d < 10 else chr(ord("A") + d - 10) for d in digits[::-1]
+    )
 
     last_c = s[-1]
     last_d = int(last_c) if last_c.isdigit() else 10 + ord(last_c) - ord("A")

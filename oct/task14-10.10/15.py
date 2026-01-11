@@ -7,5 +7,5 @@ for x in range(1, 5030 + 1):
         s //= 6
 
     res = res[::-1]
-    if res.count('2') == res.count('3'):
+    if res.count("2") == res.count("3"):
         print(x)

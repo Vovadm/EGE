@@ -5,7 +5,7 @@ for n in range(10000):
         f[n] = 156
 
     if n > 1:
-        f[n] = 2 * f[n-1] + 4
+        f[n] = 2 * f[n - 1] + 4
 
 
 print(f[2017] - 4 * f[2015])

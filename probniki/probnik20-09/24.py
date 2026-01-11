@@ -7,7 +7,7 @@ minw = None
 t = None
 
 for lins in lines:
-    c = len(re.findall(r'W', lins))
+    c = len(re.findall(r"W", lins))
     if minw is None or c < minw:
         minw = c
         t = lins

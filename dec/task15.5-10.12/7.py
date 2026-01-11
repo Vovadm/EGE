@@ -14,4 +14,4 @@ for x0 in range(10, 100000 + 1):
 
 
 print(A)
-print(51-37)
+print(51 - 37)

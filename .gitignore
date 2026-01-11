@@ -5,3 +5,4 @@
 pip_cache/
 .vscode
 .DS_Store
+pyproject.toml

@@ -13,7 +13,7 @@ else:
     p = i
     while True:
         np = p
-        for j in range(p+1, min(p+M+1, N)):
+        for j in range(p + 1, min(p + M + 1, N)):
             if t[j][1] >= K:
                 np = j
         if np == p:

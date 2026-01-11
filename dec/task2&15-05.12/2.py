@@ -16,7 +16,8 @@ def f2(x, y, z, w):
 templates = ["0?000?", "0?11?0", "00?001"]
 
 tbl = [
-    list(xyzw) + [int(f1(*xyzw)), int(f2(*xyzw))] for xyzw in product([0, 1], repeat=4)
+    list(xyzw) + [int(f1(*xyzw)), int(f2(*xyzw))]
+    for xyzw in product([0, 1], repeat=4)
 ]
 
 

@@ -35,4 +35,4 @@ print(best_centoids)
 
 p_x = sum([x for x, y in best_centoids]) / len(clusters)
 p_y = sum([y for x, y in best_centoids]) / len(clusters)
-print(int(p_x * 10_000),  int(p_y * 10_000))
+print(int(p_x * 10_000), int(p_y * 10_000))

@@ -11,4 +11,4 @@ def F(n):
         return (n + 3) * F(n - 2)
 
 
-print(F(2030)/F(2024))
+print(F(2030) / F(2024))

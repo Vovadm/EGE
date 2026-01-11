@@ -1,6 +1,8 @@
 def f(x, y, A):
 
-    return (((y > A) or (x * y < 2 * A)) <= (A * y < 30)) or ((2 * y + 4 * x) < A)
+    return (((y > A) or (x * y < 2 * A)) <= (A * y < 30)) or (
+        (2 * y + 4 * x) < A
+    )
 
 
 kk = 0

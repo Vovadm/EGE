@@ -2,13 +2,13 @@
 # а также максимальную из сумм квадратов элементов таких пар.
 # В сначала количество,затем максимальное значение.
 
-with open('dec/task17-21.12/2.txt') as f:
+with open("dec/task17-21.12/2.txt") as f:
     c = 0
     mx = -1
     d = [int(x) for x in f.readlines()]
     for i in range(len(d) - 1):
         if d[i] > 500 or d[i + 1] > 500:
             c += 1
-            mx = max(mx, d[i]**2 + d[i + 1]**2)
+            mx = max(mx, d[i] ** 2 + d[i + 1] ** 2)
 
 print(c, mx)

@@ -7,5 +7,5 @@ for x in range(1, 2030 + 1):
         s //= 6
 
     res = res[::-1]
-    if res.count('0') == 202:
+    if res.count("0") == 202:
         print(x)

@@ -10,7 +10,9 @@ with open("dec/task17-21.12/5.txt") as f:
     data = [int(x) for x in f.readlines()]
 
     for i in range(len(data) - 1):
-        if (data[i] + data[i + 1]) % 2 == 0 and (data[i] ** 2 + data[i + 1] ** 2) > 80:
+        if (data[i] + data[i + 1]) % 2 == 0 and (
+            data[i] ** 2 + data[i + 1] ** 2
+        ) > 80:
             c += 1
             pair_sum = data[i] + data[i + 1]
             if pair_sum < mn:

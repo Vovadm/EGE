@@ -6,7 +6,7 @@ def f(start, end):
         return 1
 
     if start < end:
-        return f(start + 1, end) + f(start * 2, end) + f(start*3, end)
+        return f(start + 1, end) + f(start * 2, end) + f(start * 3, end)
 
 
 print(f(1, 14) * f(14, 98))

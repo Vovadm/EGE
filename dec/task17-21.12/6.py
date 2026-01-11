@@ -3,7 +3,7 @@
 # Ответ запишите без пробела и других разделителей: сначала количество,
 # затем максимальное значение.
 
-with open('dec/task17-21.12/6.txt') as f:
+with open("dec/task17-21.12/6.txt") as f:
     c = 0
     mx = -1
     d = [int(x) for x in f.readlines()]

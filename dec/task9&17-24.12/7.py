@@ -9,7 +9,7 @@ with open("dec/task9&17-24.12/7.txt") as f:
     mx_sum = 0
     d = [int(x) for x in f.readlines()]
     for i in range(len(d) - 2):
-        triple = [d[i], d[i+1], d[i+2]]
+        triple = [d[i], d[i + 1], d[i + 2]]
         four_digit_count = sum(1 for x in triple if 1000 <= x <= 9999)
         max_div_14 = max((x for x in d if x % 14 == 0), default=0)
 

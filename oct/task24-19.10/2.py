@@ -1,5 +1,5 @@
 with open("task24-19.10/2.txt") as file:
-    s = 'O' + file.readline() + 'O'
+    s = "O" + file.readline() + "O"
     ind_O = []
 
     for i in range(len(s)):
