@@ -1,6 +1,5 @@
 from math import dist
 
-
 f = open("task27-09.11/27_A_1.txt")
 f.readline()
 points = [list(map(float, s.replace(",", ".").split())) for s in f]
