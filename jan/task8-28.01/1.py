@@ -1,10 +1,8 @@
 from itertools import product
 
-count = 0
-digits = "0123456"
-print(digits)
+c = 0
 
-for p in product(digits, repeat=4):
+for p in product("0123456", repeat=4):
     if p[0] == "0":
         continue
 
@@ -12,6 +10,6 @@ for p in product(digits, repeat=4):
         continue
 
     if p.count("4") == 1:
-        count += 1
+        c += 1
 
-print(count)
+print(c)
