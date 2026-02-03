@@ -1,6 +1,6 @@
 from math import dist
 
-f = open("examinf/27/430_B.txt")
+f = open("other/examinf/27/430B.txt")
 f.readline()
 points = [list(map(float, s.replace(",", ".").split())) for s in f]
 
@@ -11,7 +11,7 @@ for x, y in points:
     if x > 5:
         clusters[0].append([x, y])
 
-    elif y < 3.8:
+    elif y < 4:
         clusters[1].append([x, y])
 
     else:
