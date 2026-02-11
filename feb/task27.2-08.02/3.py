@@ -17,7 +17,7 @@ def visual(cluesters):
     done()
 
 
-with open("feb/task27.2-08.02/2.txt") as f:
+with open("feb/task27.2-08.02/3.txt") as f:
     points = [list(map(float, s.replace(",", ".").split())) for s in f]
     clusters = []
     eps = 1
@@ -34,11 +34,11 @@ with open("feb/task27.2-08.02/2.txt") as f:
             del clusters[-1]
 
 
-# visual(clusters)
+visual(clusters)
 
 best_centroid = [[] for _ in range(len(clusters))]
 for i in range(len(clusters)):
-    min_sum_dist = 10 * 10
+    min_sum_dist = float("inf")
     for c1 in clusters[i]:
         sum_dist = 0
         for p1 in clusters[i]:
@@ -47,7 +47,8 @@ for i in range(len(clusters)):
             min_sum_dist = sum_dist
             best_centroid[i] = c1
 
-Px = max([x for x, y in best_centroid])
-Py = max([y for x, y in best_centroid])
+Px = sum([x for x, y in best_centroid])
+Py = sum([y for x, y in best_centroid])
 
 print(int(abs(Px * 10_000)), int(abs(Py * 10_000)))
+print(len(clusters))
